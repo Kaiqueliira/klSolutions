@@ -13,7 +13,7 @@
     margin: auto;
 }
 header{
-    background: crimson;
+ 
     position: fixed;
     width: 100%;
     padding: 15px 0;
@@ -28,7 +28,12 @@ header .logo a{
   color: #fff;
   font-size: 35px;
   font-weight: 600;
+
 }
+header .logo a span{
+    color: crimson;
+  
+  }
 header .menu li{
     list-style: none;
     display: inline-block;
@@ -38,30 +43,58 @@ header .menu li a{
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px ;
+    transition: color 0.3s ease ;
+}
+header .menu li a:hover{
+    color: crimson;
+
+
 }
 
 /* Estilo INICIO */
 
 .inicio{
     display: flex;
-    /*background: url(/imagens/inicio.jpg) no-repeat center;*/
-    background: #000;
+    background: url(/imagens/inicio.jpg) no-repeat center;
+    background-color: #000;
     height: 100vh;
     min-height: 500;
     color:#fff;
-}
-.inicio .max-width{
-    margin: auto 0 auto 40px;
 }
 
 .inicio .inicio-content .text-1{
     font-size: 35px;
     font-weight: 600;
     margin-left: -3px;
+    text-shadow: 2px 2px 2px #000;
 }
 .inicio .inicio-content .text-2{
     font-size: 22px;
-    margin: 5px 0;;
+    margin: 10px 0;;
+    text-shadow: 2px 2px 2px #000;
+}
+.inicio .inicio-content .text-3{
+    font-size: 22px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.inicio .inicio-content .text-3 a{
+    padding: 15px ;
+    border: 1px solid crimson;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    font-weight: 500;
+    background-color: black;
+    color: crimson;
+}
+.inicio .inicio-content .text-3 a:hover{
+    margin: 20px 0;
+    font-size: 25px;
+    border: 1px solid;
+    background-color: crimson;
+    color:#000;
+    
 }
 .inicio .inicio-content .text-2 span{
     color: crimson;
