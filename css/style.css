@@ -16,12 +16,14 @@ header{
     position: fixed;
     width: 100%;
     padding: 15px 0;
+    z-index: 999;
 }
 .header.sticky{
     position: fixed;
     top: 0;
     width: 100%;
     background: crimson;
+    z-index: 999;
 }
 .header.sticky .menu li a:hover, .header.sticky span{
     color: black;
@@ -38,6 +40,7 @@ header .logo a{
   color: #fff;
   font-size: 35px;
   font-weight: 600;
+  z-index: 999;
 
 }
 header .logo a span{
@@ -72,22 +75,33 @@ header .menu li a:hover{
     min-height: 500;
     color:#fff;
 }
-
+.inicio-content{
+    border: 1px solid;
+    padding: 20px;
+    background-color: rgb(219, 20, 60 , 0.5);
+    border-radius: 30px;
+}
 .inicio .inicio-content .text-1{
+    z-index: 999;
     font-size: 35px;
     font-weight: 600;
     margin-left: -3px;
     text-shadow: 2px 2px 2px #000;
+
 }
 .inicio .inicio-content .text-2{
     font-size: 22px;
     margin: 10px 0;;
     text-shadow: 2px 2px 2px #000;
+    z-index: 999;
+
 }
 .inicio .inicio-content .text-3{
     font-size: 22px;
     text-align: center;
     margin: 50px 0;
+    z-index: 999;
+
 }
 
 .inicio .inicio-content .text-3 a{
@@ -95,20 +109,24 @@ header .menu li a:hover{
     border: 1px solid crimson;
     border-radius: 20px;
     font-weight: 500;
-    background-color: black;
-    color: crimson;
+    background-color: #fff;
+    color: black;
     transition: all 0.6s ease;
+    z-index: 999;
+
 }
 .inicio .inicio-content .text-3 a:hover{
     margin: 20px 0;
     font-size: 25px;
     border: 1px solid;
-    background-color: crimson;
-    color:#000;
+    background-color: #fff;
+    color:crimson;
     
 }
 .inicio .inicio-content .text-2 span{
-    color: crimson;
+    color: #fff;
     font-weight: 600;
-    text-shadow: 2px 2px 2px #000;
+    text-shadow: 2px 2px 2px crimson;
+    z-index: 999;
+
 }
