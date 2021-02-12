@@ -13,11 +13,21 @@
     margin: auto;
 }
 header{
- 
     position: fixed;
     width: 100%;
     padding: 15px 0;
 }
+.header.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: crimson;
+}
+.header.sticky .menu li a:hover, .header.sticky span{
+    color: black;
+}
+
+
 header .max-width{
     display: flex;
     align-items: center;
@@ -51,6 +61,7 @@ header .menu li a:hover{
 
 }
 
+
 /* Estilo INICIO */
 
 .inicio{
@@ -82,11 +93,11 @@ header .menu li a:hover{
 .inicio .inicio-content .text-3 a{
     padding: 15px ;
     border: 1px solid crimson;
-    transition: all 0.3s ease;
     border-radius: 20px;
     font-weight: 500;
     background-color: black;
     color: crimson;
+    transition: all 0.6s ease;
 }
 .inicio .inicio-content .text-3 a:hover{
     margin: 20px 0;
@@ -99,4 +110,5 @@ header .menu li a:hover{
 .inicio .inicio-content .text-2 span{
     color: crimson;
     font-weight: 600;
+    text-shadow: 2px 2px 2px #000;
 }
