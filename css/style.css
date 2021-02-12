@@ -76,13 +76,11 @@ header .menu li a:hover{
     color:#fff;
 }
 .inicio-content{
-    border: 1px solid;
     padding: 20px;
     background-color: rgb(219, 20, 60 , 0.5);
     border-radius: 30px;
 }
 .inicio .inicio-content .text-1{
-    z-index: 999;
     font-size: 35px;
     font-weight: 600;
     margin-left: -3px;
@@ -106,19 +104,19 @@ header .menu li a:hover{
 
 .inicio .inicio-content .text-3 a{
     padding: 15px ;
-    border: 1px solid crimson;
+    border: 1px solid none;
     border-radius: 20px;
     font-weight: 500;
     background-color: #fff;
     color: black;
-    transition: all 0.6s ease;
+    transition: all 0.7s ease;
     z-index: 999;
 
 }
 .inicio .inicio-content .text-3 a:hover{
     margin: 20px 0;
     font-size: 25px;
-    border: 1px solid;
+    border: 1px solid #000;
     background-color: #fff;
     color:crimson;
     
@@ -129,4 +127,47 @@ header .menu li a:hover{
     text-shadow: 2px 2px 2px crimson;
     z-index: 999;
 
+}
+
+/*Inicio Serviços */
+
+.servicos{
+    height: 100vh;
+    display: flex;
+    flex-flow:column wrap;
+}
+.servicos .max-width{
+    margin: 0 0;
+}
+.servicos-content{
+    padding: 20px;
+
+}
+.servicos-title{
+    text-align: center;
+    color:#000;
+    
+}
+.cards-servicos{
+    display: flex;
+    flex-flow:row wrap;
+    padding: 20px;
+    justify-content: center;
+}
+.card{
+    margin: 10px 10px;
+    padding: 15px;
+    border: 1px solid;
+    width: 300px;
+    border-radius: 20px;
+    background-color: crimson;
+    color:#fff;
+}
+.card-title{
+    font-size: 15px;
+    margin: 12px 0;
+}
+.text-card{
+    font-size: 15px;
+    text-align: justify;
 }
