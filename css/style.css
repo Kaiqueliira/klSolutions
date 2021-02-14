@@ -72,8 +72,8 @@ header .menu li a:hover{
     background: url(/imagens/inicio.jpg) no-repeat center;
     background-color: #000;
     height: 100vh;
-    min-height: 500;
     color:#fff;
+    transition: all 0.3s ease;
 }
 .inicio-content{
     padding: 20px;
@@ -132,10 +132,12 @@ header .menu li a:hover{
 /*Inicio Serviços */
 
 .servicos{
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-flow:column wrap;
    align-items: center;
+   transition: all 0.3s ease;
+
 }
 
 .servicos-content{
@@ -188,9 +190,11 @@ header .menu li a:hover{
 
 
 .contatos{
-    height: 90vh;
+    height: 100%;
     background-color: crimson;
     color: #fff;
+    transition: all 0.3s ease;
+
 }
 .contatos-content{
   padding: 50px;
@@ -250,9 +254,7 @@ footer{
 
 /* inicio das querys */
 @media only screen and (max-width: 947px) {
- .servicos, .contato{
-    height: 100%;
-    }   
+ 
   .coluna-1, .coluna-2{
       width: 100%;
   }  
@@ -261,5 +263,7 @@ footer{
   }
   .card:hover{
     width: 120%;
+    
 }
+
 }

@@ -14,18 +14,19 @@
     <header class="header">
         <div class="max-width">
             <div class="logo">
-                <a href="#"><span>KL</span>Solutions</a>
+                <a href="#inicio"><span>KL</span>Solutions</a>
             </div>
             <ul class="menu">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contatos">Contato</a></li>
                 <li><a href="#">Login</a></li>
             </ul>
         </div>
     </header>
     <main>
-        <section class="inicio" id="inicio">
+        <a name="inicio"></a>
+        <section class="inicio" id="inicio" >
             <div class="max-width">
                 <div class="inicio-content">
                     <div class="text-1">
@@ -37,11 +38,12 @@
                         dispositivos.
                     </div>
                     <div class="text-3">
-                        <a href="#">Veja Nossos Serviços</a>
+                        <a href="#servicos">Veja Nossos Serviços</a>
                     </div>
                 </div>
             </div>
         </section>
+        <a name="servicos"></a>
         <section class="servicos" id="servicos">
             <div class="max-width">
                 <div class="servicos-content">
@@ -115,6 +117,7 @@
             </div>
         </section>
         <section class="contatos">
+            <a name="contatos"></a>
             <div class="max-width">
                 <div class="contatos-content">
                     <div class="title-section">
@@ -133,12 +136,12 @@
                             
                         </div>
                             <div class="coluna coluna-2">
-                                <form action="POST" class="form-contato">
+                                <form action="" class="form-contato">
                                     <input type="text" placeholder="SEU NOME">
                                     <input type="email" placeholder="SEU EMAIL">
                                     <input type="text" placeholder="ASSUNTO">
                                     <textarea name="" id="" cols="30" rows="10" placeholder="MENSAGEM"></textarea>
-                                    <input type="submit" value="Enviar" class="btn">
+                                    <input type="submit" value="Enviar" onclick="enviado()" class="btn">
                                 </form>
                             </div>
                     </div>
