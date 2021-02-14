@@ -79,6 +79,7 @@ header .menu li a:hover{
     padding: 20px;
     background-color: rgb(219, 20, 60 , 0.5);
     border-radius: 30px;
+    box-shadow: 4px 4px 4px #fff;
 }
 .inicio .inicio-content .text-1{
     font-size: 35px;
@@ -111,6 +112,7 @@ header .menu li a:hover{
     color: black;
     transition: all 0.7s ease;
     z-index: 999;
+    box-shadow: 4px 4px 4px #000;
 
 }
 .inicio .inicio-content .text-3 a:hover{
@@ -151,6 +153,7 @@ header .menu li a:hover{
     font-size: 48px;
     font-weight: 600;
     text-transform: uppercase;
+    text-shadow: 2px 2px 2px #c4c4c4;
     
 }
 .cards-servicos{
@@ -168,8 +171,9 @@ header .menu li a:hover{
     border-radius: 20px;
     background-color: crimson;
     color:#fff;
-    height: 250px;
+    height: 300px;
     transition: all 0.5s ease;
+    box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.5);
 }
 .card-title{
     font-size: 20px;
@@ -182,8 +186,7 @@ header .menu li a:hover{
     text-shadow: 2px 2px 2px black;
 }
 .card:hover{
-    width: 330px;
-    height: 280px;
+    height: 320px;
 }
 
 /* inicio div contatos */
@@ -198,18 +201,23 @@ header .menu li a:hover{
 }
 .contatos-content{
   padding: 50px;
+
 }
 .contatos-content .title-section{
     color:#fff;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 .contato{
+    margin: 50px 0;
     display: flex;
     flex-flow:row wrap;
+    justify-content: center;
 }
 
 .coluna-1{
-    width: 50%;
+    width: 45%;
     padding: 15px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.5);
 }
 .text-contato{
     font-size: 24px;
@@ -220,8 +228,11 @@ header .menu li a:hover{
 }
 
 .coluna-2{
+    margin: 0 5px;
     width: 50%;
     padding: 15px;
+    box-shadow: 4px 4px 4px 4px rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
 
 .coluna-2 form{
@@ -238,12 +249,16 @@ header .menu li a:hover{
     background-color: #c4c4c4;
     font-size: 18px;
     border-radius: 5px;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5);
 }
 .coluna-2 form .btn {
     background-color: crimson;
     color: #fff;
+    font-weight: 900;
     border: 1px solid #fff;
-    padding: 10px;
+    padding: 15px;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5);
 }
 
 footer{
