@@ -247,3 +247,19 @@ footer{
     text-align: center;
     line-height: 5vh;
 }
+
+/* inicio das querys */
+@media only screen and (max-width: 947px) {
+ .servicos, .contato{
+    height: 100%;
+    }   
+  .coluna-1, .coluna-2{
+      width: 100%;
+  }  
+  .card{
+      width: 100%;
+  }
+  .card:hover{
+    width: 120%;
+}
+}
