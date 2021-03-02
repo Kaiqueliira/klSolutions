@@ -17,17 +17,10 @@ header{
     width: 100%;
     padding: 15px 0;
     z-index: 999;
-}
-.header.sticky{
-    position: fixed;
-    top: 0;
-    width: 100%;
     background: crimson;
-    z-index: 999;
+    color:#000;
 }
-.header.sticky .menu li a:hover, .header.sticky span{
-    color: black;
-}
+
 
 
 header .max-width{
@@ -37,6 +30,7 @@ header .max-width{
 }
 
 header .logo a{
+    
   color: #fff;
   font-size: 35px;
   font-weight: 600;
@@ -44,7 +38,7 @@ header .logo a{
 
 }
 header .logo a span{
-    color: crimson;
+    color:#000;
   
   }
 header .menu li{
@@ -59,7 +53,7 @@ header .menu li a{
     transition: color 0.3s ease ;
 }
 header .menu li a:hover{
-    color: crimson;
+    color: #000;
 }
 
 
@@ -67,34 +61,43 @@ header .menu li a:hover{
 
 .inicio{
     display: flex;
-    background: url(/imagens/inicio.jpg) no-repeat center;
-    background-color: #000;
+    background-color: rgb(196, 196, 196, 0.3);
     height: 100vh;
+    width: 100vw;
     color:#fff;
     transition: all 0.3s ease;
 }
-.inicio-content{
+.inicio-container{
+    margin: 100px 0;
     padding: 20px;
-    background-color: rgb(219, 20, 60 , 0.5);
-    border-radius: 30px;
-    box-shadow: 2px 2px 2px #fff;
+    display: flex;
+    flex-flow:row wrap;
+}
+.img-pginicio{
+    width: 500px;
+}
+.inicio-content{
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    color:crimson;
 }
 .inicio .inicio-content .text-1{
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 600;
     margin-left: -3px;
-    text-shadow: 2px 2px 2px #000;
+    text-shadow: 2px 2px 2px #fff;
 
+    
 }
 .inicio .inicio-content .text-2{
     font-size: 22px;
     margin: 10px 0;;
-    text-shadow: 2px 2px 2px #000;
     z-index: 999;
 
 }
 .inicio .inicio-content .text-3{
-    font-size: 22px;
+    font-size: 25px;
     text-align: center;
     margin: 50px 0;
     z-index: 999;
@@ -106,28 +109,26 @@ header .menu li a:hover{
     border: 1px solid none;
     border-radius: 20px;
     font-weight: 500;
-    background-color: #fff;
-    color: black;
-    transition: all 0.7s ease;
+    background-color: crimson;
+    color: #fff;
+    transition: all 0.9s ease;
     z-index: 999;
-    box-shadow: 4px 4px 4px #000;
-
+    
 }
 .inicio .inicio-content .text-3 a:hover{
     margin: 20px 0;
     font-size: 25px;
-    border: 1px solid #000;
-    background-color: #fff;
-    color:crimson;
+    color:#000;
     
 }
 .inicio .inicio-content .text-2 span{
-    color: #fff;
+    color: crimson;
     font-weight: 600;
-    text-shadow: 2px 2px 2px crimson;
+    text-shadow: 2px 2px 2px #fff;
     z-index: 999;
 
 }
+
 
 /*Inicio Serviços */
 
@@ -269,7 +270,10 @@ footer{
 
 /* inicio das querys */
 @media only screen and (max-width: 947px) {
- 
+    .inicio{
+        height: 100%;
+       
+    }
   .coluna-1, .coluna-2{
       width: 100%;
   }  
@@ -282,9 +286,20 @@ footer{
 .max-width{
     padding: 0 20px;
 }
-.servicos-content, .cards-servicos, .contatos-content {
+.servicos-content, .cards-servicos, .contatos-content, .inicio-container {
     padding: 0px;
 
+}
+.inicio-content, .img-pginicio{
+
+width: 95%;
+border-radius: 10px;
+margin: 10px 0;
+
+}
+.inicio-container{
+    margin-top: 150px;
+    justify-content: center;
 }
 
 }
